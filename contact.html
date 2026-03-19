@@ -6,7 +6,6 @@
 <title>Contact · Kerb Technology</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-
   :root {
     --bg:     #1A1D24;
     --card:   #22262F;
@@ -16,7 +15,6 @@
     --dim:    #9A9590;
     --dark:   #0A0A0A;
   }
-
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html { scroll-behavior: smooth; }
@@ -28,13 +26,12 @@
   }
   a { color: inherit; text-decoration: none; }
   img { max-width: 100%; display: block; }
-
   .section { max-width:1200px;margin:0 auto;padding:80px 5%; }
   .section-label { font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:16px; }
-  h1 { font-size:clamp(36px,6vw,72px);font-weight:900;line-height:1.05;letter-spacing:-2px; }
-  h2 { font-size:clamp(28px,4vw,48px);font-weight:800;line-height:1.1;letter-spacing:-1px; }
-  h3 { font-size:20px;font-weight:700;color:var(--cream);margin-bottom:10px; }
-  p.sub { font-size:17px;color:var(--dim);line-height:1.7;max-width:620px; }
+  h1 { font-size:clamp(48px,7vw,88px);font-weight:900;line-height:1.0;letter-spacing:-3px; }
+  h2 { font-size:clamp(34px,5vw,60px);font-weight:800;line-height:1.08;letter-spacing:-2px; }
+  h3 { font-size:16px;font-weight:600;color:var(--cream);margin-bottom:8px; }
+  p.sub { font-size:15px;color:var(--dim);line-height:1.75;max-width:620px; }
   .gold { color:var(--gold); }
   .card { background:var(--card);border-radius:12px;padding:28px;border-top:3px solid var(--gold); }
   .btn-primary { display:inline-block;padding:16px 36px;background:var(--gold);color:var(--dark);font-weight:700;font-size:15px;border-radius:8px;letter-spacing:0.3px;transition:opacity 0.2s; }
@@ -44,6 +41,7 @@
   @media(max-width:768px){
     .section{ padding:60px 5%; }
     h1{ letter-spacing:-1px; }
+    h2{ letter-spacing:-1px; }
   }
 </style>
 </head>
@@ -53,31 +51,25 @@
   <div style="max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:70px;">
     <a href="index.html"><img src="logo.png" alt="Kerb Technology" style="height:44px;width:auto;"></a>
     <div class="nav-links" style="display:flex;gap:32px;align-items:center;">
-      <a href="index.html" style="font-size:14px;font-weight:500;color:var(--dim);transition:color 0.2s;" onmouseover="this.style.color='var(--cream)'" onmouseout="this.style.color='var(--dim)'">Home</a>
-      <a href="how-it-works.html" style="font-size:14px;font-weight:500;color:var(--dim);transition:color 0.2s;" onmouseover="this.style.color='var(--cream)'" onmouseout="this.style.color='var(--dim)'">How It Works</a>
-      <a href="pricing.html" style="font-size:14px;font-weight:500;color:var(--dim);transition:color 0.2s;" onmouseover="this.style.color='var(--cream)'" onmouseout="this.style.color='var(--dim)'">Pricing</a>
-      <a href="contact.html" style="display:inline-block;padding:10px 22px;background:var(--gold);color:var(--dark);font-size:14px;font-weight:700;border-radius:6px;letter-spacing:0.3px;">Get Started</a>
+      <a href="index.html" style="font-size:14px;font-weight:500;color:var(--dim);" onmouseover="this.style.color='var(--cream)'" onmouseout="this.style.color='var(--dim)'">Home</a>
+      <a href="how-it-works.html" style="font-size:14px;font-weight:500;color:var(--dim);" onmouseover="this.style.color='var(--cream)'" onmouseout="this.style.color='var(--dim)'">How It Works</a>
+      <a href="pricing.html" style="font-size:14px;font-weight:500;color:var(--dim);" onmouseover="this.style.color='var(--cream)'" onmouseout="this.style.color='var(--dim)'">Pricing</a>
+      <a href="contact.html" style="display:inline-block;padding:10px 22px;background:var(--gold);color:var(--dark);font-size:14px;font-weight:700;border-radius:6px;">Get Started</a>
     </div>
-    <button class="hamburger" onclick="document.getElementById('mobile-menu').classList.toggle('open')" style="display:none;background:none;border:none;cursor:pointer;padding:8px;">
+    <button class="hamburger" onclick="document.getElementById('mob').classList.toggle('open')" style="display:none;background:none;border:none;cursor:pointer;padding:8px;">
       <span style="display:block;width:24px;height:2px;background:var(--cream);margin:5px 0;"></span>
       <span style="display:block;width:24px;height:2px;background:var(--cream);margin:5px 0;"></span>
       <span style="display:block;width:24px;height:2px;background:var(--cream);margin:5px 0;"></span>
     </button>
   </div>
-  <div id="mobile-menu" style="display:none;padding:16px 0 24px;border-top:1px solid rgba(200,168,75,0.1);">
+  <div id="mob" style="display:none;padding:16px 0 24px;border-top:1px solid rgba(200,168,75,0.1);">
     <a href="index.html" style="display:block;padding:12px 0;font-size:15px;color:var(--dim);">Home</a>
     <a href="how-it-works.html" style="display:block;padding:12px 0;font-size:15px;color:var(--dim);">How It Works</a>
     <a href="pricing.html" style="display:block;padding:12px 0;font-size:15px;color:var(--dim);">Pricing</a>
     <a href="contact.html" style="display:block;padding:12px 0;font-size:15px;font-weight:700;color:var(--gold);">Get Started →</a>
   </div>
 </nav>
-<style>
-  @media(max-width:768px){
-    .nav-links{display:none!important;}
-    .hamburger{display:block!important;}
-    #mobile-menu.open{display:block!important;}
-  }
-</style>
+<style>@media(max-width:768px){.nav-links{display:none!important;}.hamburger{display:block!important;}#mob.open{display:block!important;}}</style>
 
 
 <section class="section">
@@ -88,46 +80,27 @@
 
 <section class="section" style="padding-top:0;">
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;">
-
-    <!-- FORM -->
     <div>
-      <form name="kerb-enquiry" method="POST" action="thank-you.html"
-        style="display:grid;gap:20px;"
-        onsubmit="handleSubmit(event)">
-
+      <form name="kerb-enquiry" style="display:grid;gap:20px;" onsubmit="handleSubmit(event)">
         <div>
-          <label style="display:block;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--dim);margin-bottom:8px;">Your Name *</label>
-          <input type="text" name="name" required placeholder="Jane Smith"
-            style="width:100%;background:var(--card);border:1px solid rgba(200,168,75,0.2);border-radius:8px;padding:14px 16px;font-size:15px;color:var(--cream);outline:none;font-family:inherit;"
-            onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='rgba(200,168,75,0.2)'">
+          <label style="display:block;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--dim);margin-bottom:8px;">Your Name *</label>
+          <input type="text" name="name" required placeholder="Jane Smith" style="width:100%;background:var(--card);border:1px solid rgba(200,168,75,0.2);border-radius:8px;padding:14px 16px;font-size:14px;color:var(--cream);outline:none;font-family:inherit;" onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='rgba(200,168,75,0.2)'">
         </div>
-
         <div>
-          <label style="display:block;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--dim);margin-bottom:8px;">Agency Name *</label>
-          <input type="text" name="agency" required placeholder="Phillips &amp; Stubbs"
-            style="width:100%;background:var(--card);border:1px solid rgba(200,168,75,0.2);border-radius:8px;padding:14px 16px;font-size:15px;color:var(--cream);outline:none;font-family:inherit;"
-            onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='rgba(200,168,75,0.2)'">
+          <label style="display:block;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--dim);margin-bottom:8px;">Agency Name *</label>
+          <input type="text" name="agency" required placeholder="Phillips &amp; Stubbs" style="width:100%;background:var(--card);border:1px solid rgba(200,168,75,0.2);border-radius:8px;padding:14px 16px;font-size:14px;color:var(--cream);outline:none;font-family:inherit;" onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='rgba(200,168,75,0.2)'">
         </div>
-
         <div>
-          <label style="display:block;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--dim);margin-bottom:8px;">Email Address *</label>
-          <input type="email" name="email" required placeholder="jane@phillipsandstubbs.co.uk"
-            style="width:100%;background:var(--card);border:1px solid rgba(200,168,75,0.2);border-radius:8px;padding:14px 16px;font-size:15px;color:var(--cream);outline:none;font-family:inherit;"
-            onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='rgba(200,168,75,0.2)'">
+          <label style="display:block;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--dim);margin-bottom:8px;">Email Address *</label>
+          <input type="email" name="email" required placeholder="jane@youragency.co.uk" style="width:100%;background:var(--card);border:1px solid rgba(200,168,75,0.2);border-radius:8px;padding:14px 16px;font-size:14px;color:var(--cream);outline:none;font-family:inherit;" onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='rgba(200,168,75,0.2)'">
         </div>
-
         <div>
-          <label style="display:block;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--dim);margin-bottom:8px;">Phone Number</label>
-          <input type="tel" name="phone" placeholder="01234 567890"
-            style="width:100%;background:var(--card);border:1px solid rgba(200,168,75,0.2);border-radius:8px;padding:14px 16px;font-size:15px;color:var(--cream);outline:none;font-family:inherit;"
-            onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='rgba(200,168,75,0.2)'">
+          <label style="display:block;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--dim);margin-bottom:8px;">Phone Number</label>
+          <input type="tel" name="phone" placeholder="01234 567890" style="width:100%;background:var(--card);border:1px solid rgba(200,168,75,0.2);border-radius:8px;padding:14px 16px;font-size:14px;color:var(--cream);outline:none;font-family:inherit;" onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='rgba(200,168,75,0.2)'">
         </div>
-
         <div>
-          <label style="display:block;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--dim);margin-bottom:8px;">Number of Branches</label>
-          <select name="branches"
-            style="width:100%;background:var(--card);border:1px solid rgba(200,168,75,0.2);border-radius:8px;padding:14px 16px;font-size:15px;color:var(--cream);outline:none;font-family:inherit;-webkit-appearance:none;"
-            onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='rgba(200,168,75,0.2)'">
+          <label style="display:block;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--dim);margin-bottom:8px;">Number of Branches</label>
+          <select name="branches" style="width:100%;background:var(--card);border:1px solid rgba(200,168,75,0.2);border-radius:8px;padding:14px 16px;font-size:14px;color:var(--cream);outline:none;font-family:inherit;-webkit-appearance:none;" onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='rgba(200,168,75,0.2)'">
             <option value="" style="background:var(--card);">Select...</option>
             <option value="1" style="background:var(--card);">1 branch</option>
             <option value="2-5" style="background:var(--card);">2–5 branches</option>
@@ -135,73 +108,54 @@
             <option value="10+" style="background:var(--card);">10+ branches</option>
           </select>
         </div>
-
         <div>
-          <label style="display:block;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--dim);margin-bottom:8px;">Anything else?</label>
-          <textarea name="message" rows="4" placeholder="Tell us about your current setup, questions, or anything else..."
-            style="width:100%;background:var(--card);border:1px solid rgba(200,168,75,0.2);border-radius:8px;padding:14px 16px;font-size:15px;color:var(--cream);outline:none;font-family:inherit;resize:vertical;"
-            onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='rgba(200,168,75,0.2)'"></textarea>
+          <label style="display:block;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--dim);margin-bottom:8px;">Anything else?</label>
+          <textarea name="message" rows="4" placeholder="Tell us about your current setup, questions, or anything else..." style="width:100%;background:var(--card);border:1px solid rgba(200,168,75,0.2);border-radius:8px;padding:14px 16px;font-size:14px;color:var(--cream);outline:none;font-family:inherit;resize:vertical;" onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='rgba(200,168,75,0.2)'"></textarea>
         </div>
-
-        <button type="submit" class="btn-primary" style="border:none;cursor:pointer;font-family:inherit;width:100%;text-align:center;font-size:16px;padding:18px;">
-          Send Enquiry →
-        </button>
-
+        <button type="submit" class="btn-primary" style="border:none;cursor:pointer;font-family:inherit;width:100%;text-align:center;font-size:15px;padding:18px;">Send Enquiry →</button>
         <p style="font-size:12px;color:var(--dim);text-align:center;">We'll respond within one working day. No hard sell, no spam.</p>
       </form>
-
       <div id="form-success" style="display:none;background:rgba(94,201,122,0.1);border:1px solid rgba(94,201,122,0.3);border-radius:12px;padding:32px;text-align:center;">
         <div style="font-size:40px;margin-bottom:16px;">✅</div>
         <h3 style="margin-bottom:8px;">Enquiry sent!</h3>
-        <p style="font-size:14px;color:var(--dim);">We'll be in touch within one working day.</p>
+        <p style="font-size:13px;color:var(--dim);">We'll be in touch within one working day.</p>
       </div>
     </div>
-
-    <!-- SIDEBAR -->
     <div style="display:grid;gap:24px;">
       <div class="card">
         <h3 style="margin-bottom:12px;">📧 Email us directly</h3>
-        <a href="mailto:hello@kerb.technology" style="color:var(--gold);font-size:15px;font-weight:600;">hello@kerb.technology</a>
+        <a href="mailto:hello@kerb.technology" style="color:var(--gold);font-size:14px;font-weight:600;">hello@kerb.technology</a>
       </div>
       <div class="card">
         <h3 style="margin-bottom:12px;">⚡ What happens next</h3>
         <ul style="list-style:none;display:grid;gap:10px;">
-          <li style="font-size:14px;color:var(--dim);padding-left:20px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);">1.</span> We'll reply within one working day</li>
-          <li style="font-size:14px;color:var(--dim);padding-left:20px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);">2.</span> Quick 15-minute call to understand your setup</li>
-          <li style="font-size:14px;color:var(--dim);padding-left:20px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);">3.</span> We handle setup and onboarding</li>
-          <li style="font-size:14px;color:var(--dim);padding-left:20px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);">4.</span> Your first board is live within 48 hours</li>
+          <li style="font-size:13px;color:var(--dim);padding-left:20px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);">1.</span> We'll reply within one working day</li>
+          <li style="font-size:13px;color:var(--dim);padding-left:20px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);">2.</span> Quick 15-minute call to understand your setup</li>
+          <li style="font-size:13px;color:var(--dim);padding-left:20px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);">3.</span> We handle setup and onboarding</li>
+          <li style="font-size:13px;color:var(--dim);padding-left:20px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);">4.</span> Your first board is live within 48 hours</li>
         </ul>
       </div>
       <div style="background:rgba(200,168,75,0.07);border:1px solid rgba(200,168,75,0.2);border-radius:12px;padding:24px;">
-        <p style="font-size:14px;color:var(--dim);line-height:1.7;">🎯 &nbsp;<strong style="color:var(--cream);">Pilot offer:</strong> First month at 50% off on the managed plan — just £49.50 to get started.</p>
+        <p style="font-size:13px;color:var(--dim);line-height:1.7;">🎯 &nbsp;<strong style="color:var(--cream);">Pilot offer:</strong> First month at 50% off on the managed plan — just £49.50 to get started.</p>
       </div>
     </div>
-
   </div>
 </section>
-
 <script>
 function handleSubmit(e) {
   e.preventDefault();
-  document.querySelector('form[name="kerb-enquiry"]').style.display = 'none';
-  document.getElementById('form-success').style.display = 'block';
-  window.scrollTo({top: document.getElementById('form-success').offsetTop - 100, behavior: 'smooth'});
+  document.querySelector('form[name="kerb-enquiry"]').style.display='none';
+  document.getElementById('form-success').style.display='block';
+  window.scrollTo({top:document.getElementById('form-success').offsetTop-100,behavior:'smooth'});
 }
 </script>
-
-<style>
-@media(max-width:768px) {
-  section.section > div[style*="grid-template-columns:1fr 1fr"] {
-    grid-template-columns: 1fr !important;
-  }
-}
-</style>
+<style>@media(max-width:768px){section.section>div[style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr!important;}}</style>
 
 
 <footer style="background:var(--dark);border-top:1px solid rgba(200,168,75,0.15);padding:48px 5%;margin-top:80px;">
   <div style="max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;gap:32px;justify-content:space-between;align-items:center;">
     <div>
-      <img src="logo.png" alt="Kerb Technology" style="height:36px;width:auto;margin-bottom:12px;">
+      <img src="logo.png" alt="Kerb Technology" style="height:40px;width:auto;margin-bottom:12px;">
       <p style="font-size:13px;color:var(--dim);">Turning every for-sale board<br>into a lead capture engine.</p>
     </div>
     <div style="display:flex;gap:32px;flex-wrap:wrap;">

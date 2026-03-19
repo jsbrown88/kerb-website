@@ -6,7 +6,6 @@
 <title>Home · Kerb Technology</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-
   :root {
     --bg:     #1A1D24;
     --card:   #22262F;
@@ -16,7 +15,6 @@
     --dim:    #9A9590;
     --dark:   #0A0A0A;
   }
-
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html { scroll-behavior: smooth; }
@@ -28,13 +26,12 @@
   }
   a { color: inherit; text-decoration: none; }
   img { max-width: 100%; display: block; }
-
   .section { max-width:1200px;margin:0 auto;padding:80px 5%; }
   .section-label { font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:16px; }
-  h1 { font-size:clamp(36px,6vw,72px);font-weight:900;line-height:1.05;letter-spacing:-2px; }
-  h2 { font-size:clamp(28px,4vw,48px);font-weight:800;line-height:1.1;letter-spacing:-1px; }
-  h3 { font-size:20px;font-weight:700;color:var(--cream);margin-bottom:10px; }
-  p.sub { font-size:17px;color:var(--dim);line-height:1.7;max-width:620px; }
+  h1 { font-size:clamp(48px,7vw,88px);font-weight:900;line-height:1.0;letter-spacing:-3px; }
+  h2 { font-size:clamp(34px,5vw,60px);font-weight:800;line-height:1.08;letter-spacing:-2px; }
+  h3 { font-size:16px;font-weight:600;color:var(--cream);margin-bottom:8px; }
+  p.sub { font-size:15px;color:var(--dim);line-height:1.75;max-width:620px; }
   .gold { color:var(--gold); }
   .card { background:var(--card);border-radius:12px;padding:28px;border-top:3px solid var(--gold); }
   .btn-primary { display:inline-block;padding:16px 36px;background:var(--gold);color:var(--dark);font-weight:700;font-size:15px;border-radius:8px;letter-spacing:0.3px;transition:opacity 0.2s; }
@@ -44,6 +41,7 @@
   @media(max-width:768px){
     .section{ padding:60px 5%; }
     h1{ letter-spacing:-1px; }
+    h2{ letter-spacing:-1px; }
   }
 </style>
 </head>
@@ -53,37 +51,31 @@
   <div style="max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:70px;">
     <a href="index.html"><img src="logo.png" alt="Kerb Technology" style="height:44px;width:auto;"></a>
     <div class="nav-links" style="display:flex;gap:32px;align-items:center;">
-      <a href="index.html" style="font-size:14px;font-weight:500;color:var(--dim);transition:color 0.2s;" onmouseover="this.style.color='var(--cream)'" onmouseout="this.style.color='var(--dim)'">Home</a>
-      <a href="how-it-works.html" style="font-size:14px;font-weight:500;color:var(--dim);transition:color 0.2s;" onmouseover="this.style.color='var(--cream)'" onmouseout="this.style.color='var(--dim)'">How It Works</a>
-      <a href="pricing.html" style="font-size:14px;font-weight:500;color:var(--dim);transition:color 0.2s;" onmouseover="this.style.color='var(--cream)'" onmouseout="this.style.color='var(--dim)'">Pricing</a>
-      <a href="contact.html" style="display:inline-block;padding:10px 22px;background:var(--gold);color:var(--dark);font-size:14px;font-weight:700;border-radius:6px;letter-spacing:0.3px;">Get Started</a>
+      <a href="index.html" style="font-size:14px;font-weight:500;color:var(--dim);" onmouseover="this.style.color='var(--cream)'" onmouseout="this.style.color='var(--dim)'">Home</a>
+      <a href="how-it-works.html" style="font-size:14px;font-weight:500;color:var(--dim);" onmouseover="this.style.color='var(--cream)'" onmouseout="this.style.color='var(--dim)'">How It Works</a>
+      <a href="pricing.html" style="font-size:14px;font-weight:500;color:var(--dim);" onmouseover="this.style.color='var(--cream)'" onmouseout="this.style.color='var(--dim)'">Pricing</a>
+      <a href="contact.html" style="display:inline-block;padding:10px 22px;background:var(--gold);color:var(--dark);font-size:14px;font-weight:700;border-radius:6px;">Get Started</a>
     </div>
-    <button class="hamburger" onclick="document.getElementById('mobile-menu').classList.toggle('open')" style="display:none;background:none;border:none;cursor:pointer;padding:8px;">
+    <button class="hamburger" onclick="document.getElementById('mob').classList.toggle('open')" style="display:none;background:none;border:none;cursor:pointer;padding:8px;">
       <span style="display:block;width:24px;height:2px;background:var(--cream);margin:5px 0;"></span>
       <span style="display:block;width:24px;height:2px;background:var(--cream);margin:5px 0;"></span>
       <span style="display:block;width:24px;height:2px;background:var(--cream);margin:5px 0;"></span>
     </button>
   </div>
-  <div id="mobile-menu" style="display:none;padding:16px 0 24px;border-top:1px solid rgba(200,168,75,0.1);">
+  <div id="mob" style="display:none;padding:16px 0 24px;border-top:1px solid rgba(200,168,75,0.1);">
     <a href="index.html" style="display:block;padding:12px 0;font-size:15px;color:var(--dim);">Home</a>
     <a href="how-it-works.html" style="display:block;padding:12px 0;font-size:15px;color:var(--dim);">How It Works</a>
     <a href="pricing.html" style="display:block;padding:12px 0;font-size:15px;color:var(--dim);">Pricing</a>
     <a href="contact.html" style="display:block;padding:12px 0;font-size:15px;font-weight:700;color:var(--gold);">Get Started →</a>
   </div>
 </nav>
-<style>
-  @media(max-width:768px){
-    .nav-links{display:none!important;}
-    .hamburger{display:block!important;}
-    #mobile-menu.open{display:block!important;}
-  }
-</style>
+<style>@media(max-width:768px){.nav-links{display:none!important;}.hamburger{display:block!important;}#mob.open{display:block!important;}}</style>
 
 
-<!-- HERO -->
 <section style="min-height:88vh;display:flex;align-items:center;padding:80px 5%;position:relative;overflow:hidden;">
   <div style="position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 70% 50%,rgba(200,168,75,0.07) 0%,transparent 70%);pointer-events:none;"></div>
   <div style="max-width:1200px;margin:0 auto;width:100%;">
+    <img src="logo.png" alt="Kerb Technology" style="height:180px;width:auto;margin-bottom:40px;">
     <div class="section-label">Estate Agent Technology</div>
     <h1 style="margin-bottom:24px;">Turn every board<br>into a <span class="gold">lead machine.</span></h1>
     <p class="sub" style="margin-bottom:40px;">Kerb attaches a dynamic QR code to your for-sale boards. Buyers scan, you capture — a warm lead from someone standing outside the door. You own the data. Not Rightmove. Not Zoopla.</p>
@@ -108,7 +100,6 @@
   </div>
 </section>
 
-<!-- WHY KERB -->
 <section class="section" style="border-top:1px solid rgba(200,168,75,0.1);">
   <div class="section-label">Why Kerb</div>
   <h2 style="margin-bottom:16px;">The board outside your listing<br>is your most underused asset.</h2>
@@ -117,53 +108,52 @@
     <div class="card">
       <div style="font-size:28px;margin-bottom:12px;">📍</div>
       <h3>Capture the kerb browser</h3>
-      <p style="font-size:14px;color:var(--dim);line-height:1.7;">The buyer standing outside the property is your hottest lead. Kerb gets their details before they even see the full listing.</p>
+      <p style="font-size:13px;color:var(--dim);line-height:1.7;">The buyer standing outside the property is your hottest lead. Kerb gets their details before they even see the full listing.</p>
     </div>
     <div class="card">
       <div style="font-size:28px;margin-bottom:12px;">📊</div>
       <h3>Real scan analytics</h3>
-      <p style="font-size:14px;color:var(--dim);line-height:1.7;">See how many people stopped outside each property, when, and what they did next. Data you can show vendors at valuation.</p>
+      <p style="font-size:13px;color:var(--dim);line-height:1.7;">See how many people stopped outside each property, when, and what they did next. Data you can show vendors at valuation.</p>
     </div>
     <div class="card">
       <div style="font-size:28px;margin-bottom:12px;">🔒</div>
       <h3>You own the leads</h3>
-      <p style="font-size:14px;color:var(--dim);line-height:1.7;">Every name, number and email goes straight to you. No portal takes a cut. No algorithm decides who sees your data.</p>
+      <p style="font-size:13px;color:var(--dim);line-height:1.7;">Every name, number and email goes straight to you. No portal takes a cut. No algorithm decides who sees your data.</p>
     </div>
     <div class="card">
       <div style="font-size:28px;margin-bottom:12px;">⚡</div>
       <h3>Live in 48 hours</h3>
-      <p style="font-size:14px;color:var(--dim);line-height:1.7;">We handle setup and onboarding. No IT, no technical knowledge, no new hardware required beyond your existing boards.</p>
+      <p style="font-size:13px;color:var(--dim);line-height:1.7;">We handle setup and onboarding. No IT, no technical knowledge, no new hardware required beyond your existing boards.</p>
     </div>
   </div>
 </section>
 
-<!-- VS COMPETITORS -->
 <section class="section" style="border-top:1px solid rgba(200,168,75,0.1);">
-  <div class="section-label">How We Compare</div>
-  <h2 style="margin-bottom:48px;">A free QR code<br>isn't the same thing.</h2>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;">
-    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:28px;">
-      <div style="font-size:13px;font-weight:700;color:var(--dim);letter-spacing:2px;text-transform:uppercase;margin-bottom:16px;">Scanasign · £29.95/mo</div>
-      <div style="font-size:14px;color:#e05555;margin-bottom:8px;">✗ &nbsp;<strong style="color:var(--gold);">No</strong> lead capture</div>
-      <div style="font-size:14px;color:#e05555;margin-bottom:8px;">✗ &nbsp;<strong style="color:var(--gold);">No</strong> analytics</div>
-      <div style="font-size:14px;color:#e05555;">✗ &nbsp;<strong style="color:var(--gold);">No</strong> hardware supplied</div>
+  <div class="section-label">What Makes Kerb Different</div>
+  <h2 style="margin-bottom:16px;">A QR code alone<br>isn't enough.</h2>
+  <p class="sub" style="margin-bottom:40px;">A free QR generator sends buyers to a link. Kerb gives them a fully branded property page, captures their contact details before they see the full listing, tracks every scan with time and location data, and sends you an instant alert the moment a lead comes in. That's the difference between a code and a complete lead engine.</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;">
+    <div style="background:rgba(200,168,75,0.08);border:1px solid rgba(200,168,75,0.3);border-radius:12px;padding:24px;">
+      <div style="font-size:13px;font-weight:700;color:var(--gold);letter-spacing:1px;text-transform:uppercase;margin-bottom:16px;">Kerb gives you</div>
+      <div style="font-size:14px;color:var(--cream);margin-bottom:10px;">✓ &nbsp;Branded property page</div>
+      <div style="font-size:14px;color:var(--cream);margin-bottom:10px;">✓ &nbsp;Lead capture before full listing</div>
+      <div style="font-size:14px;color:var(--cream);margin-bottom:10px;">✓ &nbsp;Scan analytics &amp; peak times</div>
+      <div style="font-size:14px;color:var(--cream);margin-bottom:10px;">✓ &nbsp;Instant lead alerts</div>
+      <div style="font-size:14px;color:var(--cream);margin-bottom:10px;">✓ &nbsp;Your data — no portals involved</div>
+      <div style="font-size:14px;color:var(--cream);">✓ &nbsp;Reassign in 2 clicks when sold</div>
     </div>
-    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:28px;">
-      <div style="font-size:13px;font-weight:700;color:var(--dim);letter-spacing:2px;text-transform:uppercase;margin-bottom:16px;">Kremer Signs · £49.95/mo</div>
-      <div style="font-size:14px;color:#e05555;margin-bottom:8px;">✗ &nbsp;<strong style="color:var(--gold);">No</strong> lead capture</div>
-      <div style="font-size:14px;color:#e05555;margin-bottom:8px;">✗ &nbsp;<strong style="color:var(--gold);">No</strong> analytics</div>
-      <div style="font-size:14px;color:#e05555;">✗ &nbsp;<strong style="color:var(--gold);">No</strong> buyer data ownership</div>
-    </div>
-    <div style="background:rgba(200,168,75,0.08);border:2px solid rgba(200,168,75,0.4);border-radius:12px;padding:28px;">
-      <div style="font-size:13px;font-weight:700;color:var(--gold);letter-spacing:2px;text-transform:uppercase;margin-bottom:16px;">Kerb · from £39/mo</div>
-      <div style="font-size:14px;color:#5ec97a;margin-bottom:8px;">✓ &nbsp;Full lead capture</div>
-      <div style="font-size:14px;color:#5ec97a;margin-bottom:8px;">✓ &nbsp;Scan analytics</div>
-      <div style="font-size:14px;color:#5ec97a;">✓ &nbsp;You own the data</div>
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:24px;">
+      <div style="font-size:13px;font-weight:700;color:var(--dim);letter-spacing:1px;text-transform:uppercase;margin-bottom:16px;">A free QR code gives you</div>
+      <div style="font-size:14px;color:var(--dim);margin-bottom:10px;">✗ &nbsp;<strong style="color:var(--gold);">No</strong> lead capture</div>
+      <div style="font-size:14px;color:var(--dim);margin-bottom:10px;">✗ &nbsp;<strong style="color:var(--gold);">No</strong> analytics</div>
+      <div style="font-size:14px;color:var(--dim);margin-bottom:10px;">✗ &nbsp;<strong style="color:var(--gold);">No</strong> branded experience</div>
+      <div style="font-size:14px;color:var(--dim);margin-bottom:10px;">✗ &nbsp;<strong style="color:var(--gold);">No</strong> instant alerts</div>
+      <div style="font-size:14px;color:var(--dim);margin-bottom:10px;">✗ &nbsp;<strong style="color:var(--gold);">No</strong> data ownership</div>
+      <div style="font-size:14px;color:var(--dim);">✗ &nbsp;Just a link</div>
     </div>
   </div>
 </section>
 
-<!-- CTA BANNER -->
 <section style="background:rgba(200,168,75,0.07);border-top:1px solid rgba(200,168,75,0.2);border-bottom:1px solid rgba(200,168,75,0.2);padding:72px 5%;text-align:center;">
   <div style="max-width:640px;margin:0 auto;">
     <h2 style="margin-bottom:16px;">Ready to own your leads?</h2>
@@ -176,7 +166,7 @@
 <footer style="background:var(--dark);border-top:1px solid rgba(200,168,75,0.15);padding:48px 5%;margin-top:80px;">
   <div style="max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;gap:32px;justify-content:space-between;align-items:center;">
     <div>
-      <img src="logo.png" alt="Kerb Technology" style="height:36px;width:auto;margin-bottom:12px;">
+      <img src="logo.png" alt="Kerb Technology" style="height:40px;width:auto;margin-bottom:12px;">
       <p style="font-size:13px;color:var(--dim);">Turning every for-sale board<br>into a lead capture engine.</p>
     </div>
     <div style="display:flex;gap:32px;flex-wrap:wrap;">
