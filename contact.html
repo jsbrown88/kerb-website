@@ -27,9 +27,9 @@
   a { color: inherit; text-decoration: none; }
   img { max-width: 100%; display: block; }
   body, .section { text-align: left; }
-  .section { max-width:1200px;margin:0 auto;padding:80px 5%; }
+  .section { width:100%;padding:80px 5%;max-width:none; }
   .section-label { font-size:22px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:14px; }
-  h1 { font-size:clamp(48px,7vw,88px);font-weight:900;line-height:1.0;letter-spacing:-3px; }
+  h1 { font-size:clamp(24px,3.5vw,42px);font-weight:800;line-height:1.1;letter-spacing:-1px; }
   h2 { font-size:clamp(18px,2.5vw,28px);font-weight:600;line-height:1.2;letter-spacing:-0.5px;color:var(--cream); }
   h3 { font-size:14px;font-weight:500;color:var(--cream);margin-bottom:8px; }
   p.sub { font-size:15px;color:var(--dim);line-height:1.75;max-width:620px; }
@@ -49,7 +49,7 @@
 <body>
 
 <nav style="position:sticky;top:0;z-index:100;background:rgba(26,29,36,0.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(200,168,75,0.15);padding:0 5%;">
-  <div style="max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:70px;">
+  <div style="display:flex;align-items:center;justify-content:space-between;height:70px;padding:0;">
     <a href="index.html"><img src="logo.png" alt="Kerb Technology" style="height:72px;width:auto;"></a>
     <div class="nav-links" style="display:flex;gap:32px;align-items:center;">
       <a href="index.html" style="font-size:14px;font-weight:500;color:var(--dim);" onmouseover="this.style.color='var(--cream)'" onmouseout="this.style.color='var(--dim)'">Home</a>
@@ -154,7 +154,7 @@ function handleSubmit(e) {
 
 
 <footer style="background:var(--dark);border-top:1px solid rgba(200,168,75,0.15);padding:48px 5%;margin-top:80px;">
-  <div style="max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;gap:32px;justify-content:space-between;align-items:center;">
+  <div style="display:flex;flex-wrap:wrap;gap:32px;justify-content:space-between;align-items:center;">
     <div>
       <img src="logo.png" alt="Kerb Technology" style="height:40px;width:auto;margin-bottom:12px;">
       <p style="font-size:13px;color:var(--dim);">Turning every for-sale board<br>into a lead capture engine.</p>
