@@ -28,7 +28,8 @@
   a { color: inherit; text-decoration: none; }
   img { max-width: 100%; display: block; }
   body, .section { text-align: left; }
-  .section { padding: 80px var(--lm); }
+  .wrap { max-width: 700px; margin: 0 auto; padding: 0 5%; }
+  .section { padding: 80px 0; }
   .section-label { font-size:22px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:14px; }
   h1 { font-size:clamp(24px,3.5vw,42px);font-weight:800;line-height:1.1;letter-spacing:-1px; }
   h2 { font-size:clamp(18px,2.5vw,28px);font-weight:600;line-height:1.2;letter-spacing:-0.5px;color:var(--cream); }
@@ -40,7 +41,7 @@
   .btn-primary:hover { opacity:0.88; }
   .btn-outline { display:inline-block;padding:15px 35px;border:2px solid var(--gold);color:var(--gold);font-weight:700;font-size:15px;border-radius:8px;letter-spacing:0.3px;transition:all 0.2s; }
   .btn-outline:hover { background:var(--gold);color:var(--dark); }
-  @media(max-width:768px){ :root { --lm: 5%; } .section { padding: 60px var(--lm); }
+  @media(max-width:768px){ .section { padding: 60px 0; }
     h1{ letter-spacing:-1px; }
     h2{ letter-spacing:-1px; }
   }
@@ -48,8 +49,8 @@
 </head>
 <body>
 
-<nav style="position:sticky;top:0;z-index:100;background:rgba(26,29,36,0.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(200,168,75,0.15);padding:0 8%;">
-  <div style="display:flex;align-items:center;justify-content:space-between;height:70px;padding:0;">
+<nav style="position:sticky;top:0;z-index:100;background:rgba(26,29,36,0.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(200,168,75,0.15);padding:0;">
+  <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;height:70px;padding:0;">
     <a href="index.html"><img src="logo.png" alt="Kerb Technology" style="height:72px;width:auto;"></a>
     <div class="nav-links" style="display:flex;gap:32px;align-items:center;">
       <a href="index.html" style="font-size:14px;font-weight:500;color:var(--dim);" onmouseover="this.style.color='var(--cream)'" onmouseout="this.style.color='var(--dim)'">Home</a>
@@ -72,13 +73,13 @@
 </nav>
 <style>@media(max-width:768px){.nav-links{display:none!important;}.hamburger{display:block!important;}#mob.open{display:block!important;}}</style>
 
-<section class="section">
+<section class="section"><div class="wrap">
   <div class="section-label">Get In Touch</div>
   <h1 style="margin-bottom:20px;">Let's get your<br>first board <span class="gold">live.</span></h1>
   <p class="sub">Fill in the form and we'll be in touch within one working day. Most branches are live within 48 hours.</p>
-</section>
+</div></section>
 
-<section class="section" style="padding-top:0;">
+<section class="section"><div class="wrap" style="padding-top:0;">
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;">
     <div>
       <form name="kerb-enquiry" style="display:grid;gap:20px;" onsubmit="handleSubmit(event)">
@@ -140,7 +141,7 @@
       </div>
     </div>
   </div>
-</section>
+</div></section>
 <script>
 function handleSubmit(e) {
   e.preventDefault();
