@@ -30,8 +30,8 @@
   body, .section { text-align: left; }
   .wrap { max-width: 1000px; margin: 0 auto; padding: 0 5%; }
   .section { padding: 80px 0; }
-  .section-label { font-size:22px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:14px; }
-  h1 { font-size:clamp(24px,3.5vw,42px);font-weight:800;line-height:1.1;letter-spacing:-1px; }
+  .section-label { font-size:33px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:14px; }
+  h1 { font-size:clamp(18px,2.5vw,28px);font-weight:600;line-height:1.2;letter-spacing:-0.5px; }
   h2 { font-size:clamp(18px,2.5vw,28px);font-weight:600;line-height:1.2;letter-spacing:-0.5px;color:var(--cream); }
   h3 { font-size:14px;font-weight:500;color:var(--cream);margin-bottom:8px; }
   p.sub { font-size:15px;color:var(--dim);line-height:1.75;max-width:620px; }
@@ -51,13 +51,13 @@
 
 <nav style="position:sticky;top:0;z-index:100;background:rgba(26,29,36,0.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(200,168,75,0.15);padding:0;">
   <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;height:70px;">
-    <a href="index.html"><img src="logo.png" alt="Kerb Technology" style="height:72px;width:auto;"></a>
     <div class="nav-links" style="display:flex;gap:32px;align-items:center;">
       <a href="index.html" style="font-size:14px;font-weight:500;color:var(--dim);" onmouseover="this.style.color='var(--cream)'" onmouseout="this.style.color='var(--dim)'">Home</a>
       <a href="how-it-works.html" style="font-size:14px;font-weight:500;color:var(--dim);" onmouseover="this.style.color='var(--cream)'" onmouseout="this.style.color='var(--dim)'">How It Works</a>
       <a href="pricing.html" style="font-size:14px;font-weight:500;color:var(--dim);" onmouseover="this.style.color='var(--cream)'" onmouseout="this.style.color='var(--dim)'">Pricing</a>
       <a href="contact.html" style="display:inline-block;padding:10px 22px;background:var(--gold);color:var(--dark);font-size:14px;font-weight:700;border-radius:6px;">Get Started</a>
     </div>
+    <a href="index.html"><img src="logo.png" alt="Kerb Technology" style="height:28px;width:auto;"></a>
     <button class="hamburger" onclick="document.getElementById('mob').classList.toggle('open')" style="display:none;background:none;border:none;cursor:pointer;padding:8px;">
       <span style="display:block;width:24px;height:2px;background:var(--cream);margin:5px 0;"></span>
       <span style="display:block;width:24px;height:2px;background:var(--cream);margin:5px 0;"></span>
@@ -76,7 +76,7 @@
 <section class="section"><div class="wrap">
   <div class="section-label">Get In Touch</div>
   <h1 style="margin-bottom:20px;">Let's get your<br>first board <span class="gold">live.</span></h1>
-  <p class="sub">Fill in the form and we'll be in touch within one working day. Most branches are live within 48 hours.</p>
+  <p class="sub">Fill in the form and we'll be in touch. Most branches are live within a few days.</p>
 </div></section>
 
 <section class="section"><div class="wrap" style="padding-top:0;">
@@ -114,12 +114,12 @@
           <textarea name="message" rows="4" placeholder="Tell us about your current setup, questions, or anything else..." style="width:100%;background:var(--card);border:1px solid rgba(200,168,75,0.2);border-radius:8px;padding:14px 16px;font-size:14px;color:var(--cream);outline:none;font-family:inherit;resize:vertical;" onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='rgba(200,168,75,0.2)'"></textarea>
         </div>
         <button type="submit" class="btn-primary" style="border:none;cursor:pointer;font-family:inherit;width:100%;text-align:center;font-size:15px;padding:18px;">Send Enquiry →</button>
-        <p style="font-size:12px;color:var(--dim);text-align:center;">We'll respond within one working day. No hard sell, no spam.</p>
+        <p style="font-size:12px;color:var(--dim);text-align:center;">No hard sell, no spam.</p>
       </form>
       <div id="form-success" style="display:none;background:rgba(94,201,122,0.1);border:1px solid rgba(94,201,122,0.3);border-radius:12px;padding:32px;text-align:center;">
         <div style="font-size:40px;margin-bottom:16px;">✅</div>
         <h3 style="margin-bottom:8px;">Enquiry sent!</h3>
-        <p style="font-size:13px;color:var(--dim);">We'll be in touch within one working day.</p>
+        <p style="font-size:13px;color:var(--dim);">We'll be in touch soon.</p>
       </div>
     </div>
     <div style="display:grid;gap:24px;">
@@ -127,15 +127,7 @@
         <h3 style="margin-bottom:12px;">📧 Email us directly</h3>
         <a href="mailto:contact@kerb.technology" style="color:var(--gold);font-size:14px;font-weight:600;">contact@kerb.technology</a>
       </div>
-      <div class="card">
-        <h3 style="margin-bottom:12px;">⚡ What happens next</h3>
-        <ul style="list-style:none;display:grid;gap:10px;">
-          <li style="font-size:13px;color:var(--dim);padding-left:20px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);">1.</span> We'll reply within one working day</li>
-          <li style="font-size:13px;color:var(--dim);padding-left:20px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);">2.</span> Quick 15-minute call to understand your setup</li>
-          <li style="font-size:13px;color:var(--dim);padding-left:20px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);">3.</span> We handle setup and onboarding</li>
-          <li style="font-size:13px;color:var(--dim);padding-left:20px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);">4.</span> Your first board is live within 48 hours</li>
-        </ul>
-      </div>
+
 
     </div>
   </div>

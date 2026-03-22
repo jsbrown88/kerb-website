@@ -30,7 +30,7 @@
   body, .section { text-align: left; }
   .wrap { max-width: 1000px; margin: 0 auto; padding: 0 5%; }
   .section { padding: 80px 0; }
-  .section-label { font-size:22px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:14px; }
+  .section-label { font-size:33px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:14px; }
   h1 { font-size:clamp(24px,3.5vw,42px);font-weight:800;line-height:1.1;letter-spacing:-1px; }
   h2 { font-size:clamp(18px,2.5vw,28px);font-weight:600;line-height:1.2;letter-spacing:-0.5px;color:var(--cream); }
   h3 { font-size:14px;font-weight:500;color:var(--cream);margin-bottom:8px; }
@@ -51,13 +51,13 @@
 
 <nav style="position:sticky;top:0;z-index:100;background:rgba(26,29,36,0.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(200,168,75,0.15);padding:0;">
   <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;height:70px;">
-    <a href="index.html"><img src="logo.png" alt="Kerb Technology" style="height:72px;width:auto;"></a>
     <div class="nav-links" style="display:flex;gap:32px;align-items:center;">
       <a href="index.html" style="font-size:14px;font-weight:500;color:var(--dim);" onmouseover="this.style.color='var(--cream)'" onmouseout="this.style.color='var(--dim)'">Home</a>
       <a href="how-it-works.html" style="font-size:14px;font-weight:500;color:var(--dim);" onmouseover="this.style.color='var(--cream)'" onmouseout="this.style.color='var(--dim)'">How It Works</a>
       <a href="pricing.html" style="font-size:14px;font-weight:500;color:var(--dim);" onmouseover="this.style.color='var(--cream)'" onmouseout="this.style.color='var(--dim)'">Pricing</a>
       <a href="contact.html" style="display:inline-block;padding:10px 22px;background:var(--gold);color:var(--dark);font-size:14px;font-weight:700;border-radius:6px;">Get Started</a>
     </div>
+    <a href="index.html"><img src="logo.png" alt="Kerb Technology" style="height:28px;width:auto;"></a>
     <button class="hamburger" onclick="document.getElementById('mob').classList.toggle('open')" style="display:none;background:none;border:none;cursor:pointer;padding:8px;">
       <span style="display:block;width:24px;height:2px;background:var(--cream);margin:5px 0;"></span>
       <span style="display:block;width:24px;height:2px;background:var(--cream);margin:5px 0;"></span>
@@ -75,11 +75,11 @@
 
 <section class="section"><div class="wrap">
   <div class="section-label">How It Works</div>
-  <h1 style="margin-bottom:20px;">Up and running<br>in <span class="gold">three days.</span></h1>
+  <h2 style="margin-bottom:20px;">Up and running<br>in <span class="gold">a few days.</span></h2>
   <p class="sub">Everything is managed from one simple dashboard. If you can use Rightmove, you can use Kerb. No technical knowledge required.</p>
 </div></section>
 
-<section class="section"><div class="wrap" style="padding-top:0;">
+<section style="padding:20px 0 80px;"><div class="wrap" style="padding-top:0;">
   <div style="display:grid;gap:24px;">
     <div style="display:grid;grid-template-columns:80px 1fr;gap:24px;align-items:start;background:var(--card);border-radius:12px;padding:32px;border-top:3px solid var(--gold);">
       <div style="text-align:center;">
@@ -90,7 +90,6 @@
         <h3>Set Up</h3>
         <ul style="list-style:none;display:grid;gap:10px;margin-top:10px;">
           <li style="font-size:14px;color:var(--dim);padding-left:20px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);">→</span> Create your branch account online in minutes</li>
-          <li style="font-size:14px;color:var(--dim);padding-left:20px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);">→</span> Full onboarding and setup handled for you — no IT support needed</li>
           <li style="font-size:14px;color:var(--dim);padding-left:20px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);">→</span> Your QR codes are ready to use — just print and go</li>
           <li style="font-size:14px;color:var(--dim);padding-left:20px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);">→</span> No software to install</li>
         </ul>
@@ -106,7 +105,6 @@
         <ul style="list-style:none;display:grid;gap:10px;margin-top:10px;">
           <li style="font-size:14px;color:var(--dim);padding-left:20px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);">→</span> Log in to your dashboard and add each property</li>
           <li style="font-size:14px;color:var(--dim);padding-left:20px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);">→</span> Upload photos, asking price, number of beds, EPC rating and floorplan</li>
-          <li style="font-size:14px;color:var(--dim);padding-left:20px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);">→</span> Each listing takes under 2 minutes</li>
           <li style="font-size:14px;color:var(--dim);padding-left:20px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);">→</span> Import directly from Rightmove or Zoopla if you prefer</li>
         </ul>
       </div>
@@ -136,7 +134,6 @@
         <ul style="list-style:none;display:grid;gap:10px;margin-top:10px;">
           <li style="font-size:14px;color:var(--dim);padding-left:20px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);">→</span> Property sold? Reassign the QR code to a new listing in 2 clicks</li>
           <li style="font-size:14px;color:var(--dim);padding-left:20px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);">→</span> View scan counts, peak times and lead data in your dashboard any time</li>
-          <li style="font-size:14px;color:var(--dim);padding-left:20px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);">→</span> Weekly summary report delivered to your inbox automatically</li>
           <li style="font-size:14px;color:var(--dim);padding-left:20px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);">→</span> Use real scan data in your vendor valuations — no other local agent can offer this</li>
         </ul>
       </div>
@@ -175,7 +172,7 @@
 <section style="background:rgba(200,168,75,0.07);border-top:1px solid rgba(200,168,75,0.2);border-bottom:1px solid rgba(200,168,75,0.2);padding:72px 5%;text-align:center;">
   <div style="max-width:580px;margin:0 auto;">
     <h2 style="margin-bottom:16px;">Ready to get started?</h2>
-    <p class="sub" style="text-align:center;margin:0 auto 32px;">We'll have you live within 48 hours of signing up.</p>
+    <p class="sub" style="text-align:center;margin:0 auto 32px;">We'll have you live within a few days of signing up.</p>
     <a href="contact.html" class="btn-primary">Get In Touch</a>
   </div>
 </div></section>

@@ -30,7 +30,7 @@
   body, .section { text-align: left; }
   .wrap { max-width: 1000px; margin: 0 auto; padding: 0 5%; }
   .section { padding: 80px 0; }
-  .section-label { font-size:22px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:14px; }
+  .section-label { font-size:33px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:14px; }
   h1 { font-size:clamp(24px,3.5vw,42px);font-weight:800;line-height:1.1;letter-spacing:-1px; }
   h2 { font-size:clamp(18px,2.5vw,28px);font-weight:600;line-height:1.2;letter-spacing:-0.5px;color:var(--cream); }
   h3 { font-size:14px;font-weight:500;color:var(--cream);margin-bottom:8px; }
@@ -51,13 +51,13 @@
 
 <nav style="position:sticky;top:0;z-index:100;background:rgba(26,29,36,0.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(200,168,75,0.15);padding:0;">
   <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;height:70px;">
-    <a href="index.html"><img src="logo.png" alt="Kerb Technology" style="height:72px;width:auto;"></a>
     <div class="nav-links" style="display:flex;gap:32px;align-items:center;">
       <a href="index.html" style="font-size:14px;font-weight:500;color:var(--dim);" onmouseover="this.style.color='var(--cream)'" onmouseout="this.style.color='var(--dim)'">Home</a>
       <a href="how-it-works.html" style="font-size:14px;font-weight:500;color:var(--dim);" onmouseover="this.style.color='var(--cream)'" onmouseout="this.style.color='var(--dim)'">How It Works</a>
       <a href="pricing.html" style="font-size:14px;font-weight:500;color:var(--dim);" onmouseover="this.style.color='var(--cream)'" onmouseout="this.style.color='var(--dim)'">Pricing</a>
       <a href="contact.html" style="display:inline-block;padding:10px 22px;background:var(--gold);color:var(--dark);font-size:14px;font-weight:700;border-radius:6px;">Get Started</a>
     </div>
+    <a href="index.html"><img src="logo.png" alt="Kerb Technology" style="height:28px;width:auto;"></a>
     <button class="hamburger" onclick="document.getElementById('mob').classList.toggle('open')" style="display:none;background:none;border:none;cursor:pointer;padding:8px;">
       <span style="display:block;width:24px;height:2px;background:var(--cream);margin:5px 0;"></span>
       <span style="display:block;width:24px;height:2px;background:var(--cream);margin:5px 0;"></span>
@@ -75,11 +75,10 @@
 
 <section class="section"><div class="wrap">
   <div class="section-label">Pricing</div>
-  <h1 style="margin-bottom:20px;">Two plans.<br><span class="gold">No surprises.</span></h1>
-  <p class="sub">Per branch location. Cancel any time. 14-day free trial on the Pro plan.</p>
+  <h2 style="margin-bottom:20px;">A plan for every branch.</h2>
 </div></section>
 
-<section class="section"><div class="wrap" style="padding-top:0;">
+<section style="padding:0 0 80px;"><div class="wrap" style="padding-top:0;">
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;max-width:860px;">
     <div style="background:var(--card);border-radius:16px;padding:40px;border:2px solid var(--gold);position:relative;">
       <div style="position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--gold);color:var(--dark);font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:4px 16px;border-radius:20px;">Recommended</div>
@@ -137,7 +136,7 @@
     </div>
     <div style="background:var(--card);border-radius:10px;padding:24px;">
       <h3 style="margin-bottom:8px;">How long does setup take?</h3>
-      <p style="font-size:13px;color:var(--dim);">Most branches are live within 48 hours of signing up. We handle the onboarding — you just add your listings and attach the QR to your boards.</p>
+      <p style="font-size:13px;color:var(--dim);">Most branches are live within a few days of signing up. We handle the onboarding — you just add your listings and attach the QR to your boards.</p>
     </div>
   </div>
 </div></section>
@@ -145,7 +144,7 @@
 <section style="background:rgba(200,168,75,0.07);border-top:1px solid rgba(200,168,75,0.2);border-bottom:1px solid rgba(200,168,75,0.2);padding:72px 5%;text-align:center;">
   <div style="max-width:580px;margin:0 auto;">
     <h2 style="margin-bottom:16px;">Ready to get started?</h2>
-    <p class="sub" style="text-align:center;margin:0 auto 32px;">Live within 48 hours of signing up.</p>
+    <p class="sub" style="text-align:center;margin:0 auto 32px;">Live within a few days of signing up.</p>
     <a href="contact.html" class="btn-primary">Get Started Today</a>
   </div>
 </div></section>

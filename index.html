@@ -22,7 +22,7 @@
 
   .wrap { max-width: 1000px; margin: 0 auto; padding: 0 5%; }
   .section { padding: 80px 0; }
-  .section-label { font-size: 22px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 14px; }
+  .section-label { font-size: 33px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 14px; }
   h2 { font-size: clamp(18px, 2.5vw, 28px); font-weight: 600; line-height: 1.2; color: var(--cream); }
   h3 { font-size: 14px; font-weight: 500; color: var(--cream); margin-bottom: 8px; }
   p.sub { font-size: 15px; color: var(--dim); line-height: 1.75; max-width: 620px; }
@@ -40,13 +40,13 @@
 <!-- NAV -->
 <nav style="position:sticky;top:0;z-index:100;background:rgba(26,29,36,0.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(200,168,75,0.15);">
   <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;height:70px;">
-    <a href="index.html"><img src="logo.png" alt="Kerb Technology" style="height:72px;width:auto;"></a>
     <div class="nav-links" style="display:flex;gap:32px;align-items:center;">
       <a href="index.html" style="font-size:14px;font-weight:500;color:var(--dim);" onmouseover="this.style.color='var(--cream)'" onmouseout="this.style.color='var(--dim)'">Home</a>
       <a href="how-it-works.html" style="font-size:14px;font-weight:500;color:var(--dim);" onmouseover="this.style.color='var(--cream)'" onmouseout="this.style.color='var(--dim)'">How It Works</a>
       <a href="pricing.html" style="font-size:14px;font-weight:500;color:var(--dim);" onmouseover="this.style.color='var(--cream)'" onmouseout="this.style.color='var(--dim)'">Pricing</a>
       <a href="contact.html" style="display:inline-block;padding:10px 22px;background:var(--gold);color:var(--dark);font-size:14px;font-weight:700;border-radius:6px;">Get Started</a>
     </div>
+    <a href="index.html"><img src="logo.png" alt="Kerb Technology" style="height:28px;width:auto;"></a>
     <button class="hamburger" onclick="document.getElementById('mob').classList.toggle('open')" style="display:none;background:none;border:none;cursor:pointer;padding:8px;">
       <span style="display:block;width:24px;height:2px;background:var(--cream);margin:5px 0;"></span>
       <span style="display:block;width:24px;height:2px;background:var(--cream);margin:5px 0;"></span>
@@ -65,26 +65,26 @@
 <!-- HERO -->
 <div class="section" style="position:relative;overflow:hidden;">
   <div style="position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 70% 50%,rgba(200,168,75,0.07) 0%,transparent 70%);pointer-events:none;"></div>
-  <div class="wrap" style="min-height:80vh;display:flex;flex-direction:column;justify-content:center;">
+  <div class="wrap" style="display:flex;flex-direction:column;justify-content:center;">
   <div class="section-label">Estate Agent Technology</div>
-  <p style="font-size:clamp(24px,3.5vw,42px);font-weight:800;line-height:1.1;letter-spacing:-1px;color:var(--cream);margin-bottom:24px;max-width:700px;">Turn every board into a <span class="gold">lead machine.</span></p>
-  <p class="sub" style="margin-bottom:40px;">Kerb attaches a dynamic QR code to your for-sale boards. Buyers scan, you capture — a warm lead from someone standing outside the door. You own the data. Not Rightmove or Zoopla.</p>
+  <p style="font-size:clamp(18px,2.5vw,28px);font-weight:600;line-height:1.2;color:var(--cream);margin-bottom:24px;max-width:700px;">Turn every board into a <span class="gold">lead.</span></p>
+  <p class="sub" style="margin-bottom:40px;">Kerb attaches a dynamic QR code to your for-sale boards. Buyers scan, you capture — a warm lead from someone standing outside the door. Your board, your data, your leads.</p>
   <div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:64px;">
     <a href="how-it-works.html" class="btn-primary">See How It Works</a>
-    <a href="contact.html" class="btn-outline">Get Started Free</a>
+    <a href="contact.html" class="btn-outline">Get Started</a>
   </div>
-  <div style="display:flex;gap:48px;flex-wrap:wrap;">
-    <div>
-      <div style="font-size:42px;font-weight:900;color:var(--cream);">£39</div>
-      <div style="font-size:13px;color:var(--dim);">per branch per month</div>
+  <div style="display:flex;gap:20px;flex-wrap:wrap;">
+    <div style="background:var(--card);border:2px solid var(--gold);border-radius:12px;padding:20px 28px;min-width:180px;">
+      <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-bottom:8px;">Starter</div>
+      <div style="font-size:28px;font-weight:900;color:var(--cream);line-height:1;">£39</div>
+      <div style="font-size:11px;color:var(--dim);margin-bottom:10px;">per month · per branch</div>
+      <div style="font-size:12px;color:var(--dim);line-height:1.5;">Up to 5 properties<br>Lead capture + alerts</div>
     </div>
-    <div>
-      <div style="font-size:42px;font-weight:900;color:var(--cream);">2 sec</div>
-      <div style="font-size:13px;color:var(--dim);">to a branded property page</div>
-    </div>
-    <div>
-      <div style="font-size:42px;font-weight:900;color:var(--cream);">100%</div>
-      <div style="font-size:13px;color:var(--dim);">your lead data</div>
+    <div style="background:var(--card);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px 28px;min-width:180px;">
+      <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-bottom:8px;">Pro</div>
+      <div style="font-size:28px;font-weight:900;color:var(--cream);line-height:1;">£79</div>
+      <div style="font-size:11px;color:var(--dim);margin-bottom:10px;">per month · per branch</div>
+      <div style="font-size:12px;color:var(--dim);line-height:1.5;">Unlimited properties<br>Full analytics + CRM export</div>
     </div>
   </div>
   </div>
@@ -114,7 +114,7 @@
     </div>
     <div class="card">
       <div style="font-size:28px;margin-bottom:12px;">⚡</div>
-      <h3>Live in 48 hours</h3>
+      <h3>Live in a few days</h3>
       <p style="font-size:13px;color:var(--dim);line-height:1.7;">We handle setup and onboarding. No IT, no technical knowledge, no new hardware required beyond your existing boards.</p>
     </div>
   </div>
@@ -155,8 +155,8 @@
   <div class="wrap">
   <div class="section-label">Get Started</div>
   <h2 style="margin-bottom:16px;">Ready to own your leads?</h2>
-  <p class="sub" style="margin-bottom:32px;">Get in touch today and we'll have your first board live within 48 hours.</p>
-  <a href="contact.html" class="btn-primary">Start Your Free Trial</a>
+  <p class="sub" style="margin-bottom:32px;">Get in touch today and we'll have your first board live within a few days.</p>
+  <a href="contact.html" class="btn-primary">Get Started</a>
   </div>
 </div>
 
