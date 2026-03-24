@@ -125,7 +125,7 @@
     <div style="display:grid;gap:24px;">
       <div class="card">
         <h3 style="margin-bottom:12px;">📧 Email us directly</h3>
-        <a href="mailto:contact@kerb.technology" style="color:var(--gold);font-size:14px;font-weight:600;">contact@kerb.technology</a>
+        <a href="mailto:connect@kerb.technology" style="color:var(--gold);font-size:14px;font-weight:600;">connect@kerb.technology</a>
       </div>
 
 
@@ -135,7 +135,18 @@
 <script>
 function handleSubmit(e) {
   e.preventDefault();
-  document.querySelector('form[name="kerb-enquiry"]').style.display='none';
+  var form = document.querySelector('form[name="kerb-enquiry"]');
+  var data = new FormData(form);
+  var name = data.get('name') || '';
+  var email = data.get('email') || '';
+  var phone = data.get('phone') || '';
+  var agency = data.get('agency') || '';
+  var branches = data.get('branches') || '';
+  var message = data.get('message') || '';
+  var subject = 'Kerb Enquiry from ' + name + (agency ? ' (' + agency + ')' : '');
+  var body = 'Name: ' + name + '%0D%0AEmail: ' + email + '%0D%0APhone: ' + phone + '%0D%0AAgency: ' + agency + '%0D%0ABranches: ' + branches + '%0D%0A%0D%0AMessage:%0D%0A' + encodeURIComponent(message);
+  window.open('mailto:connect@kerb.technology?subject=' + encodeURIComponent(subject) + '&body=' + body, '_blank');
+  form.style.display='none';
   document.getElementById('form-success').style.display='block';
   window.scrollTo({top:document.getElementById('form-success').offsetTop-100,behavior:'smooth'});
 }
