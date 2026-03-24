@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Privacy Policy · Kerb Technology</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#1A1D24; --card:#22262F; --gold:#D4A04A; --cream:#F5F0E8; --dim:#9A9590; --dark:#0A0A0A; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Inter',-apple-system,sans-serif; background:var(--bg); color:var(--cream); line-height:1.7; }
+  a { color:var(--gold); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  .wrap { max-width:760px; margin:0 auto; padding:60px 5% 80px; }
+  h1 { font-size:28px; font-weight:800; color:var(--gold); margin-bottom:8px; }
+  .updated { font-size:12px; color:var(--dim); margin-bottom:40px; }
+  h2 { font-size:18px; font-weight:700; color:var(--cream); margin-top:36px; margin-bottom:12px; }
+  h3 { font-size:15px; font-weight:600; color:var(--cream); margin-top:24px; margin-bottom:8px; }
+  p, li { font-size:14px; color:var(--dim); margin-bottom:12px; }
+  ul { margin-left:20px; margin-bottom:16px; }
+  li { margin-bottom:6px; }
+  table { width:100%; border-collapse:collapse; margin:16px 0; font-size:13px; }
+  th { background:var(--card); color:var(--cream); text-align:left; padding:10px 14px; font-weight:600; }
+  td { padding:10px 14px; border-bottom:1px solid rgba(255,255,255,0.05); color:var(--dim); }
+  .nav { padding:20px 5%; display:flex; align-items:center; justify-content:space-between; }
+  .nav a { color:var(--dim); font-size:13px; margin-left:24px; text-decoration:none; }
+  .nav a:hover { color:var(--gold); }
+  footer { background:var(--dark); border-top:1px solid rgba(212,160,74,0.15); padding:48px 8%; margin-top:80px; }
+</style>
+</head>
+<body>
+
+<div class="nav">
+  <a href="index.html" style="margin-left:0;"><img src="logo-new.jpg" alt="Kerb" style="height:32px;"></a>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="how-it-works.html">How It Works</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+<div class="wrap">
+
+<h1>Privacy Policy</h1>
+<p class="updated">Last updated: 24 March 2026</p>
+
+<p>Kerb Technology ("Kerb", "we", "us", "our") is committed to protecting your privacy. This policy explains what personal data we collect, why we collect it, how we use it, and your rights under the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018.</p>
+
+<h2>1. Who We Are</h2>
+<p>Kerb Technology operates the property intelligence platform at <a href="https://app.kerb.technology">app.kerb.technology</a> and the website at <a href="https://www.kerb.technology">kerb.technology</a>. We are the data controller for the personal data described in this policy.</p>
+<p>Contact: <a href="mailto:privacy@kerb.technology">privacy@kerb.technology</a></p>
+
+<h2>2. What Data We Collect</h2>
+
+<h3>Estate Agent Accounts</h3>
+<table>
+  <tr><th>Data</th><th>Purpose</th><th>Lawful Basis</th></tr>
+  <tr><td>Full name</td><td>Account identification</td><td>Contract</td></tr>
+  <tr><td>Email address</td><td>Login & account communications</td><td>Contract</td></tr>
+  <tr><td>Company telephone number</td><td>Contact & support</td><td>Contract</td></tr>
+  <tr><td>Agency name / branch</td><td>Display on property listings</td><td>Contract</td></tr>
+  <tr><td>Password</td><td>Authentication (stored as bcrypt hash — never in plain text)</td><td>Contract</td></tr>
+</table>
+
+<h3>Property Enquiries (Buyers / Viewers)</h3>
+<table>
+  <tr><th>Data</th><th>Purpose</th><th>Lawful Basis</th></tr>
+  <tr><td>Name</td><td>Lead identification for the estate agent</td><td>Legitimate interest</td></tr>
+  <tr><td>Email address</td><td>Allow agent to follow up</td><td>Legitimate interest</td></tr>
+  <tr><td>Phone number (optional)</td><td>Allow agent to follow up</td><td>Legitimate interest</td></tr>
+  <tr><td>Message (optional)</td><td>Context for the enquiry</td><td>Legitimate interest</td></tr>
+</table>
+
+<h3>Analytics Data (Anonymous)</h3>
+<table>
+  <tr><th>Data</th><th>Purpose</th><th>Lawful Basis</th></tr>
+  <tr><td>QR code scan timestamps</td><td>Scan analytics for agents</td><td>Legitimate interest</td></tr>
+  <tr><td>Page view timestamps</td><td>Engagement analytics</td><td>Legitimate interest</td></tr>
+  <tr><td>Browser user agent string</td><td>Device analytics</td><td>Legitimate interest</td></tr>
+</table>
+
+<h2>3. How We Use Your Data</h2>
+<ul>
+  <li>To provide and maintain the Kerb platform</li>
+  <li>To authenticate estate agent accounts</li>
+  <li>To deliver buyer enquiries to the relevant estate agent</li>
+  <li>To provide analytics and reporting to estate agents</li>
+  <li>To communicate service updates and support information</li>
+</ul>
+<p>We do <strong>not</strong> sell, rent, or share your personal data with third parties for marketing purposes.</p>
+
+<h2>4. Data Storage & Security</h2>
+<ul>
+  <li>All data is stored on encrypted servers hosted by Vercel (US) and Neon (US)</li>
+  <li>International transfers are covered by the UK-US Data Bridge agreement</li>
+  <li>Passwords are hashed using bcrypt (industry standard, irreversible)</li>
+  <li>All connections use TLS/SSL encryption</li>
+  <li>Property photos are stored in Vercel Blob Storage with access controls</li>
+</ul>
+
+<h2>5. Data Retention</h2>
+<ul>
+  <li><strong>Agent accounts:</strong> Retained while the account is active. Deleted within 30 days of account closure request.</li>
+  <li><strong>Buyer enquiries (leads):</strong> Retained for up to 12 months, then automatically deleted.</li>
+  <li><strong>Analytics data:</strong> Retained for up to 24 months in anonymised/aggregated form.</li>
+</ul>
+
+<h2>6. Your Rights</h2>
+<p>Under the UK GDPR, you have the right to:</p>
+<ul>
+  <li><strong>Access</strong> — request a copy of the personal data we hold about you</li>
+  <li><strong>Rectification</strong> — ask us to correct inaccurate data</li>
+  <li><strong>Erasure</strong> — ask us to delete your data ("right to be forgotten")</li>
+  <li><strong>Restriction</strong> — ask us to limit how we use your data</li>
+  <li><strong>Portability</strong> — receive your data in a structured, machine-readable format</li>
+  <li><strong>Object</strong> — object to processing based on legitimate interest</li>
+</ul>
+<p>To exercise any of these rights, contact us at <a href="mailto:privacy@kerb.technology">privacy@kerb.technology</a>. We will respond within 30 days.</p>
+
+<h2>7. Cookies</h2>
+<p>Kerb uses only essential cookies required for authentication and session management. We do not use tracking cookies, advertising cookies, or third-party analytics cookies.</p>
+
+<h2>8. Third-Party Services</h2>
+<table>
+  <tr><th>Provider</th><th>Purpose</th><th>Location</th></tr>
+  <tr><td>Vercel</td><td>Hosting & deployment</td><td>US (UK-US Data Bridge)</td></tr>
+  <tr><td>Neon</td><td>Database</td><td>US (UK-US Data Bridge)</td></tr>
+  <tr><td>Vercel Blob</td><td>Image storage</td><td>US (UK-US Data Bridge)</td></tr>
+</table>
+
+<h2>9. Children</h2>
+<p>Kerb is not intended for use by anyone under 18. We do not knowingly collect data from children.</p>
+
+<h2>10. Changes to This Policy</h2>
+<p>We may update this policy from time to time. Changes will be posted on this page with an updated "Last updated" date. Material changes will be communicated to registered users via email.</p>
+
+<h2>11. Complaints</h2>
+<p>If you are unsatisfied with how we handle your data, you have the right to lodge a complaint with the Information Commissioner's Office (ICO):</p>
+<ul>
+  <li>Website: <a href="https://ico.org.uk" target="_blank">ico.org.uk</a></li>
+  <li>Phone: 0303 123 1113</li>
+</ul>
+
+</div>
+
+<footer>
+  <div style="display:flex;flex-wrap:wrap;gap:32px;justify-content:space-between;align-items:center;">
+    <div>
+      <img src="logo-new.jpg" alt="Kerb Technology" style="height:40px;width:auto;margin-bottom:12px;">
+      <p style="font-size:13px;color:var(--dim);">Turning every for-sale board<br>into a lead capture engine.</p>
+    </div>
+    <div style="display:flex;gap:32px;flex-wrap:wrap;">
+      <a href="index.html" style="font-size:13px;color:var(--dim);text-decoration:none;">Home</a>
+      <a href="how-it-works.html" style="font-size:13px;color:var(--dim);text-decoration:none;">How It Works</a>
+      <a href="pricing.html" style="font-size:13px;color:var(--dim);text-decoration:none;">Pricing</a>
+      <a href="contact.html" style="font-size:13px;color:var(--dim);text-decoration:none;">Contact</a>
+      <a href="privacy.html" style="font-size:13px;color:var(--gold);text-decoration:none;">Privacy</a>
+      <a href="terms.html" style="font-size:13px;color:var(--dim);text-decoration:none;">Terms</a>
+    </div>
+    <p style="font-size:12px;color:rgba(154,149,144,0.5);">© 2026 Kerb Technology · kerb.technology</p>
+  </div>
+</footer>
+
+</body>
+</html>
