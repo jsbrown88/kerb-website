@@ -76,81 +76,29 @@
 <section class="section"><div class="wrap">
   <div class="section-label">Get In Touch</div>
   <h1 style="margin-bottom:20px;">Let's get your<br>first board <span class="gold">live.</span></h1>
-  <p class="sub" style="margin-bottom:0;">Fill in the form and we'll be in touch. Most branches are live within a few days.</p>
+  <p class="sub" style="margin-bottom:0;">Start your free trial today — no card required. Or drop us an email and we'll get you set up.</p>
 </div></section>
 
 <section class="section" style="padding-top:20px;"><div class="wrap" style="padding-top:0;">
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;">
-    <div>
-      <form name="kerb-enquiry" style="display:grid;gap:20px;" onsubmit="handleSubmit(event)">
-        <div>
-          <label style="display:block;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--dim);margin-bottom:8px;">Your Name *</label>
-          <input type="text" name="name" required placeholder="" style="width:100%;background:var(--card);border:1px solid rgba(212,160,74,0.2);border-radius:8px;padding:14px 16px;font-size:14px;color:var(--cream);outline:none;font-family:inherit;" onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='rgba(212,160,74,0.2)'">
-        </div>
-        <div>
-          <label style="display:block;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--dim);margin-bottom:8px;">Agency Name *</label>
-          <input type="text" name="agency" required placeholder="" style="width:100%;background:var(--card);border:1px solid rgba(212,160,74,0.2);border-radius:8px;padding:14px 16px;font-size:14px;color:var(--cream);outline:none;font-family:inherit;" onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='rgba(212,160,74,0.2)'">
-        </div>
-        <div>
-          <label style="display:block;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--dim);margin-bottom:8px;">Email Address *</label>
-          <input type="email" name="email" required placeholder="" style="width:100%;background:var(--card);border:1px solid rgba(212,160,74,0.2);border-radius:8px;padding:14px 16px;font-size:14px;color:var(--cream);outline:none;font-family:inherit;" onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='rgba(212,160,74,0.2)'">
-        </div>
-        <div>
-          <label style="display:block;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--dim);margin-bottom:8px;">Phone Number</label>
-          <input type="tel" name="phone" placeholder="" style="width:100%;background:var(--card);border:1px solid rgba(212,160,74,0.2);border-radius:8px;padding:14px 16px;font-size:14px;color:var(--cream);outline:none;font-family:inherit;" onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='rgba(212,160,74,0.2)'">
-        </div>
-        <div>
-          <label style="display:block;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--dim);margin-bottom:8px;">Number of Branches</label>
-          <select name="branches" style="width:100%;background:var(--card);border:1px solid rgba(212,160,74,0.2);border-radius:8px;padding:14px 16px;font-size:14px;color:var(--cream);outline:none;font-family:inherit;-webkit-appearance:none;" onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='rgba(212,160,74,0.2)'">
-            <option value="" style="background:var(--card);">Select...</option>
-            <option value="1" style="background:var(--card);">1 branch</option>
-            <option value="2-5" style="background:var(--card);">2–5 branches</option>
-            <option value="6-10" style="background:var(--card);">6–10 branches</option>
-            <option value="10+" style="background:var(--card);">10+ branches</option>
-          </select>
-        </div>
-        <div>
-          <label style="display:block;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--dim);margin-bottom:8px;">Anything else?</label>
-          <textarea name="message" rows="4" placeholder="" style="width:100%;background:var(--card);border:1px solid rgba(212,160,74,0.2);border-radius:8px;padding:14px 16px;font-size:14px;color:var(--cream);outline:none;font-family:inherit;resize:vertical;" onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='rgba(212,160,74,0.2)'"></textarea>
-        </div>
-        <button type="submit" class="btn-primary" style="border:none;cursor:pointer;font-family:inherit;width:100%;text-align:center;font-size:15px;padding:18px;">Send Enquiry →</button>
-        <p style="font-size:12px;color:var(--dim);text-align:center;">No hard sell, no spam.</p>
-      </form>
-      <div id="form-success" style="display:none;background:rgba(94,201,122,0.1);border:1px solid rgba(94,201,122,0.3);border-radius:12px;padding:32px;text-align:center;">
-        <div style="font-size:40px;margin-bottom:16px;">✅</div>
-        <h3 style="margin-bottom:8px;">Enquiry sent!</h3>
-        <p style="font-size:13px;color:var(--dim);">We'll be in touch soon.</p>
-      </div>
+    <div class="card" style="text-align:center;padding:48px 36px;">
+      <div style="font-size:48px;margin-bottom:20px;">🚀</div>
+      <h2 style="margin-bottom:12px;">Start Your Free Trial</h2>
+      <p style="font-size:15px;color:var(--dim);margin-bottom:8px;">7 days free — no card required.</p>
+      <p style="font-size:14px;color:var(--dim);margin-bottom:28px;">List your first property, generate QR codes, and start capturing leads in minutes.</p>
+      <a href="https://app.kerb.technology/" class="btn-primary" style="display:inline-block;font-size:16px;padding:18px 48px;border:none;">Get Started Free →</a>
+      <p style="font-size:12px;color:var(--dim);margin-top:16px;">Plans from £39/month after trial</p>
     </div>
     <div style="display:grid;gap:24px;">
       <div class="card">
         <h3 style="margin-bottom:12px;">📧 Email us directly</h3>
+        <p style="font-size:14px;color:var(--dim);margin-bottom:12px;">Questions? Want a demo? Just drop us a line.</p>
         <a href="mailto:connect@kerb.technology" style="color:var(--gold);font-size:14px;font-weight:600;">connect@kerb.technology</a>
       </div>
-
-
     </div>
   </div>
 </div></section>
-<script>
-function handleSubmit(e) {
-  e.preventDefault();
-  var form = document.querySelector('form[name="kerb-enquiry"]');
-  var data = new FormData(form);
-  var name = data.get('name') || '';
-  var email = data.get('email') || '';
-  var phone = data.get('phone') || '';
-  var agency = data.get('agency') || '';
-  var branches = data.get('branches') || '';
-  var message = data.get('message') || '';
-  var subject = 'Kerb Enquiry from ' + name + (agency ? ' (' + agency + ')' : '');
-  var body = 'Name: ' + name + '%0D%0AEmail: ' + email + '%0D%0APhone: ' + phone + '%0D%0AAgency: ' + agency + '%0D%0ABranches: ' + branches + '%0D%0A%0D%0AMessage:%0D%0A' + encodeURIComponent(message);
-  window.open('mailto:connect@kerb.technology?subject=' + encodeURIComponent(subject) + '&body=' + body, '_blank');
-  form.style.display='none';
-  document.getElementById('form-success').style.display='block';
-  window.scrollTo({top:document.getElementById('form-success').offsetTop-100,behavior:'smooth'});
-}
-</script>
+
 <style>@media(max-width:768px){section.section>div[style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr!important;}}</style>
 
 
